@@ -1,20 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
  
-  
-
   return (
     <>
-     <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
+     <div className='w-full bg-blue-800 text-white flex justify-center py-4'>
           <div className="container flex justify-between text-lg">
             <div className='text-2xl font-bold uppercase'>Farma Goals</div>
 
             <div className='flex gap-4'>
-              <div className='hover:underline'>Produtos</div>
-              <div className='hover:underline'>Categorias</div>        
-              <div className='hover:underline'>Sair</div>
+             
+              <Link to='/categorias' className='hover:underline'>Categorias</Link>        
+                         
+              
             </div>
           </div>
         </div>
